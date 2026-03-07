@@ -73,3 +73,38 @@
 .editProfileButton:hover {
   background-color: #0b5ed7;
 }
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 16px;
+  }
+
+  .formTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 12px;
+  }
+
+  .profileCard {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .formTitle {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .profileInfo {
+    font-size: 15px;
+  }
+}

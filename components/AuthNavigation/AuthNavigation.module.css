@@ -12,7 +12,9 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .logoutButton:hover {
@@ -33,4 +35,22 @@
 
 .navigationLink:hover {
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .navigationItem {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .userEmail {
+    font-size: 0.85rem;
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .navigationLink {
+    display: block;
+    padding: 0.5rem 0;
+  }
 }

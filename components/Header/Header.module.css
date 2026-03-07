@@ -5,6 +5,7 @@
   padding: 1rem 2rem;
   background-color: #333;
   color: white;
+  position: relative;
 }
 
 .header a {
@@ -16,6 +17,32 @@
 
 .header a:hover {
   color: #ddd;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 11;
+}
+
+.burgerLine {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav {
+  display: flex;
 }
 
 .navigation {
@@ -36,4 +63,46 @@
 
 .navigation li a:hover {
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .navigation li {
+    width: 100%;
+  }
+
+  .navigation li a {
+    display: block;
+    padding: 0.5rem 0;
+  }
 }

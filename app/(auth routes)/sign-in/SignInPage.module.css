@@ -66,3 +66,22 @@
   margin-top: 4px;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .form {
+    margin: 20px 12px;
+    padding: 16px;
+  }
+
+  .formTitle {
+    font-size: 20px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}

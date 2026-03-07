@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  padding: 16px;
 }
 
 .modal {
@@ -19,4 +20,17 @@
   width: 100%;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 480px) {
+  .backdrop {
+    padding: 8px;
+  }
+
+  .modal {
+    padding: 16px;
+    border-radius: 8px;
+  }
 }

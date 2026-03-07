@@ -24,3 +24,32 @@
   margin-bottom: 16px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0 8px 12px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

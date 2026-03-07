@@ -7,6 +7,12 @@
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .listItem {
   background-color: #ffffff;
   border: 1px solid #dee2e6;
@@ -119,4 +125,18 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  .link,
+  .edit,
+  .button {
+    font-size: 13px;
+    padding: 0 8px;
+    height: 30px;
+  }
 }

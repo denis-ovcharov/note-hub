@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-roboto), sans-serif;
   display: flex;
@@ -5,4 +11,10 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: #f8f9fa;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

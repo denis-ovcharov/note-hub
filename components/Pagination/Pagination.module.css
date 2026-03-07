@@ -14,7 +14,9 @@
   cursor: pointer;
   min-width: 36px;
   height: 36px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .pagination li a {
@@ -44,4 +46,20 @@
 .active a {
   color: #fff !important;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .pagination li {
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .pagination li a {
+    font-size: 12px;
+  }
 }

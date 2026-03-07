@@ -21,3 +21,32 @@
   background-color: #444;
   color: #ddd;
 }
+
+.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.active:hover {
+  background-color: #0b5ed7;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .menuItem {
+    margin-bottom: 0;
+  }
+
+  .menuLink {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #444;
+  }
+}
