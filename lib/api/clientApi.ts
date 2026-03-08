@@ -53,6 +53,11 @@ export async function fetchNoteById(id: string) {
   return data;
 }
 
+export async function updateNote(id: string, noteData: NoteData) {
+  const { data } = await nextServer.patch<Note>(`/notes/${id}`, noteData);
+  return data;
+}
+
 export interface RegisterRequest {
   email: string;
   password: string;
