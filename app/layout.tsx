@@ -48,7 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body className={roboto.variable}>
-        <Toaster position="top-right" />
+        <Toaster position="top-center" />
         <TanStackProvider>
           <AuthProvider>
             <Header />
