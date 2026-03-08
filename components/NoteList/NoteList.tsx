@@ -28,8 +28,8 @@ export default function NoteList({ notes }: NoteListProps) {
           <li className={css.listItem} key={note.id}>
             <h2 className={css.title}>{note.title}</h2>
             <p className={css.content}>{note.content}</p>
-            <span className={css.tag}>{note.tag}</span>
             <div className={css.footer}>
+              <span className={css.tag}>{note.tag}</span>
               <div className={css.actions}>
                 <Link href={`/notes/${note.id}`} className={css.link}>
                   View details

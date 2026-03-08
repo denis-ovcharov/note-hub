@@ -39,14 +39,15 @@
 
 @media (max-width: 768px) {
   .navigationItem {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
+    gap: 0.5rem;
   }
 
   .userEmail {
     font-size: 0.85rem;
     margin-right: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
   .navigationLink {

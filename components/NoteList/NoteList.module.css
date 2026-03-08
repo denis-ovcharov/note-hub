@@ -14,11 +14,11 @@
 }
 
 .listItem {
-  background-color: #ffffff;
-  border: 1px solid #dee2e6;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,14 +29,14 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 8px 0;
-  color: #212529;
+  color: var(--text-heading);
 }
 
 .content {
   margin: 0;
   flex-grow: 1;
   font-size: 14px;
-  color: #495057;
+  color: var(--text-secondary);
   margin-bottom: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -47,7 +47,7 @@
 .button {
   font-size: 14px;
   color: #fff;
-  background-color: #dc3545;
+  background-color: var(--accent-red);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -55,7 +55,7 @@
 }
 
 .button:hover {
-  background-color: #bb2d3b;
+  background-color: var(--accent-red-hover);
 }
 
 .footer {
@@ -69,21 +69,21 @@
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
-  color: #0d6efd;
-  background-color: #e7f1ff;
-  border: 1px solid #b6d4fe;
+  color: var(--tag-text);
+  background-color: var(--bg-tag);
+  border: 1px solid var(--tag-border);
   border-radius: 12px;
   max-width: 100px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .link {
   font-size: 14px;
   color: #fff;
-  background-color: #0d6efd;
+  background-color: var(--accent-blue);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -94,12 +94,12 @@
 }
 
 .link:hover {
-  background-color: #0b5ed7;
+  background-color: var(--accent-blue-hover);
 }
 .edit {
   font-size: 14px;
   color: #fff;
-  background-color: #358649;
+  background-color: var(--accent-green);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -107,7 +107,7 @@
 }
 
 .edit:hover {
-  background-color: #2d6a4f;
+  background-color: var(--accent-green-hover);
 }
 
 .actions {

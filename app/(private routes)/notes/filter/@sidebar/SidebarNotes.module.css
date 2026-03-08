@@ -10,7 +10,7 @@
 
 .menuLink {
   text-decoration: none;
-  color: white;
+  color: var(--text-on-header);
   font-size: 16px;
   display: block;
   padding: 8px 16px;
@@ -18,17 +18,17 @@
 }
 
 .menuLink:hover {
-  background-color: #444;
-  color: #ddd;
+  background-color: var(--bg-hover);
+  color: var(--text-hover);
 }
 
 .active {
-  background-color: #0d6efd;
+  background-color: var(--accent-blue);
   color: #fff;
 }
 
 .active:hover {
-  background-color: #0b5ed7;
+  background-color: var(--accent-blue-hover);
   color: #fff;
 }
 
@@ -47,16 +47,17 @@
     padding: 6px 12px;
     font-size: 14px;
     border-radius: 4px;
-    background-color: #444;
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
   }
 
   .active {
-    background-color: #0d6efd;
+    background-color: var(--accent-blue);
     color: #fff;
   }
 
   .active:hover {
-    background-color: #0b5ed7;
+    background-color: var(--accent-blue-hover);
     color: #fff;
   }
 }

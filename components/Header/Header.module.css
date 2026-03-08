@@ -3,9 +3,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: var(--bg-header);
+  color: var(--text-on-header);
   position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .header a {
@@ -80,7 +86,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: var(--bg-header);
     padding: 1rem;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

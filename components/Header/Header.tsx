@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import AuthNavigation from "../AuthNavigation/AuthNavigation";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import css from "./Header.module.css";
 import Link from "next/link";
 
@@ -13,9 +14,12 @@ const Header = () => {
 
   return (
     <header className={css.header}>
-      <Link href="/" aria-label="Home">
-        NoteHub
-      </Link>
+      <div className={css.brand}>
+        <Link href="/" aria-label="Home">
+          NoteHub
+        </Link>
+        <ThemeToggle />
+      </div>
       <button
         className={css.burger}
         onClick={toggleMenu}
