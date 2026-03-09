@@ -1,10 +1,17 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import css from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted)
+    return <button className={css.toggle} aria-label="Toggle theme" />;
 
   return (
     <button
