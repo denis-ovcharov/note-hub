@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "next-themes";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -40,23 +41,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
-          }}
-        />
-      </head>
       <body className={roboto.variable}>
-        <Toaster position="top-center" />
-        <TanStackProvider>
-          <AuthProvider>
-            <Header />
-            {children}
-            {modal}
-            <Footer />
-          </AuthProvider>
-        </TanStackProvider>
+        <ThemeProvider attribute="data-theme" defaultTheme="dark">
+          <Toaster position="top-center" />
+          <TanStackProvider>
+            <AuthProvider>
+              <Header />
+              {children}
+              {modal}
+              <Footer />
+            </AuthProvider>
+          </TanStackProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
