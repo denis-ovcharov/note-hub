@@ -64,6 +64,9 @@ export default function EditNoteClient({ note }: { note: Note }) {
               className={css.textarea}
               defaultValue={note.content}
             />
+            <span className={css.hint}>
+              Supports Markdown: **bold**, *italic*, `code`, lists, headers etc.
+            </span>
           </div>
 
           <div className={css.formGroup}>

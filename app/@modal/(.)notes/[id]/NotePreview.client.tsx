@@ -6,6 +6,7 @@ import { fetchNoteById } from "@/lib/api/clientApi";
 import css from "./NotePreview.module.css";
 import Modal from "@/components/Modal/Modal";
 import { Note } from "@/types/note";
+import MarkdownContent from "@/components/MarkdownContent/MarkdownContent";
 
 const NotePreviewClient = () => {
   const router = useRouter();
@@ -47,8 +48,7 @@ const NotePreviewClient = () => {
             <h2>{note.title}</h2>
           </div>
           <p className={css.tag}>{note.tag}</p>
-          <p>{note.content}</p>
-
+          <MarkdownContent content={note.content} />
           <p>
             <span className={css.text}>Created at: </span>
             {formatDate(note.createdAt)}

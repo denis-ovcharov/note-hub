@@ -71,6 +71,12 @@
   background-color: var(--btn-cancel-hover);
 }
 
+.hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
 .error {
   color: var(--error-color);
   font-size: 12px;

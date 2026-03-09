@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import { fetchNoteById } from "@/lib/api/clientApi";
 import css from "./NoteDetails.module.css";
+import MarkdownContent from "@/components/MarkdownContent/MarkdownContent";
 
 const NoteDetailsClient = () => {
   const { id } = useParams<{ id: string }>();
@@ -39,7 +40,7 @@ const NoteDetailsClient = () => {
           <h2>{note.title}</h2>
         </div>
         <p className={css.tag}>{note.tag}</p>
-        <p>{note.content}</p>
+        <MarkdownContent content={note.content} />
         <p>
           <span className={css.text}>Created at: </span>
           {formatDate(note.createdAt)}

@@ -54,3 +54,10 @@
     padding: 0 8px 8px;
   }
 }
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-top: 32px;
+}

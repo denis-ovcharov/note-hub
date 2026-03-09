@@ -71,6 +71,9 @@ export default function NoteForm() {
           className={css.textarea}
           defaultValue={draft.content}
         />
+        <span className={css.hint}>
+          Supports Markdown: **bold**, *italic*, `code`, lists, headers etc.
+        </span>
       </div>
 
       <div className={css.formGroup}>
