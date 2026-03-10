@@ -31,7 +31,7 @@
 ## 📁 Project Structure
 
 ```
-09-auth/
+note-hub/
 ├── app/              # Next.js App Router pages & layouts
 ├── components/       # Reusable UI components
 ├── lib/              # Utility functions & helpers
@@ -54,10 +54,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/denis-ovcharov/09-auth.git
+git clone https://github.com/denis-ovcharov/note-hub.git
 
 # Navigate to the project directory
-cd 09-auth
+cd note-hub
 
 # Install dependencies
 npm install
