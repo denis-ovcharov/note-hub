@@ -1,10 +1,13 @@
 export interface Note {
-  id: string;
+  _id: string;
   title: string;
   content: string;
   createdAt: string;
   updatedAt: string;
   tag: NoteTag;
+  isTrashed: boolean;
+  deletedAt: string | null;
+  isFavourite: boolean;
 }
 
 export type NoteTag =

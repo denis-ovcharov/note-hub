@@ -14,10 +14,10 @@ export default function EditNoteClient({ note }: { note: Note }) {
   const queryClient = useQueryClient();
 
   const { mutate, isPending } = useMutation({
-    mutationFn: (data: NoteData) => updateNote(note.id, data),
+    mutationFn: (data: NoteData) => updateNote(note._id, data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["notes"] });
-      queryClient.invalidateQueries({ queryKey: ["note", note.id] });
+      queryClient.invalidateQueries({ queryKey: ["note", note._id] });
       toast.success("Note updated");
       router.push("/notes/filter/all");
     },

@@ -31,16 +31,16 @@ export const useTrashStore = create<TrashStore>()(
         })),
 
       restoreNote: (id) => {
-        const item = get().trashedNotes.find((t) => t.note.id === id);
+        const item = get().trashedNotes.find((t) => t.note._id === id);
         set((s) => ({
-          trashedNotes: s.trashedNotes.filter((t) => t.note.id !== id),
+          trashedNotes: s.trashedNotes.filter((t) => t.note._id !== id),
         }));
         return item;
       },
 
       permanentDelete: (id) =>
         set((s) => ({
-          trashedNotes: s.trashedNotes.filter((t) => t.note.id !== id),
+          trashedNotes: s.trashedNotes.filter((t) => t.note._id !== id),
         })),
 
       clearExpired: () =>
